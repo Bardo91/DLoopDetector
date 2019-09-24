@@ -45,8 +45,8 @@ macro(GetDependency name other_dependency)
       endif()
       ExternalProject_Add(${name}
         PREFIX ${DEPENDENCY_DIR}
-        GIT_REPOSITORY http://github.com/dorian3d/${name}
-        GIT_TAG master
+        GIT_REPOSITORY http://github.com/bardo91/${name}
+        GIT_TAG opencv4_compatibility
         INSTALL_DIR ${DEPENDENCY_INSTALL_DIR}
         CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=<INSTALL_DIR>
         DEPENDS ${dependency})
